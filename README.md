@@ -33,13 +33,14 @@ Procedures to allow creation and population of a Banner POPSEL from an externall
   - POPSEL User ID - A00350677
 - The last two tell the system where the file can be found.
   - Folder name - 'STUDENT'
-  - name of the Oracle directory, or in this context, when you used WINSCP to put the file on the server, the username used to connect.
+    - name of the Oracle directory, or in this context, when you used WINSCP to put the file on the server, the username used to connect.
   - File name - 'advisor_sample_01.txt'
     - the complete file name, including extension fot he file we wish to import.
 - REMEMBER - the file must be plain text and contain only the a-numbers. .txt or .csv will both work, but it can have no header nor columns other than a-numbers.
 - If you selected DATABASE as your jobsub printer, you can review output, specifically the .lis file to get a log of any errors encountered
 
-#### Verifying the file loaded correctly One of the many beauties of utilizing POPSEL is we can still use all the Banner forms to interact with the population
+#### Verifying the file loaded correctly
+One of the many beauties of utilizing POPSEL is we can still use all the Banner forms to interact with the population
 
 - Go to GLAEXTR (or GLIEXTR for inquery mode) to review the popsel you just loaded
 - With GLAEXTR you can add or removed specific IDs for your population manually
