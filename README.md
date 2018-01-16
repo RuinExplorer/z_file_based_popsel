@@ -1,17 +1,19 @@
 # z_file_based_popsel
 Procedures to allow creation and population of a Banner POPSEL from an externally loaded spreadsheet.
 
-##ZGPPSEL - Load POPSEL from file
-##ZGPPURG - Purge POPSEL
+## New JOBSUB Processes
+
+- ZGPPSEL - Load POPSEL from file
+- ZGPPURG - Purge POPSEL
 
 ###Building a new POPSEL
 
-*Start with INB form GLRSLCT to define a new POPSEL if it doesn't already exist.
-*Application is an organizational area, like a module. For this example we will use STUDENT.
-*The Selection ID if a unique identifier/title for this specific POPSEL, lets use 'BATCH_UPDATE_ADVISORS
-*The selection description is an admittedly short description, in this case 'students to update advisors'
-*Now because we are going to manually load, we can ignore the POPSEL Rules.
-*Save the new record.
+- Start with INB form GLRSLCT to define a new POPSEL if it doesn't already exist.
+- Application is an organizational area, like a module. For this example we will use STUDENT.
+- The Selection ID if a unique identifier/title for this specific POPSEL, lets use 'BATCH_UPDATE_ADVISORS
+- The selection description is an admittedly short description, in this case 'students to update advisors'
+- Now because we are going to manually load, we can ignore the POPSEL Rules.
+- Save the new record.
 
 ###Anatomy of a POPSEL
 
@@ -23,9 +25,9 @@ Procedures to allow creation and population of a Banner POPSEL from an externall
 
 ###ZGPPSEL - Loading students from the file
 
-*Go to JOBSUB process ZGPPSEL, this is what allows us to load the POPSEL from a file rather than using the INB POPSEL forms
-*there are 6 parameters. the first four we described above
-..*POPSEL Application - STUDENT
+- Go to JOBSUB process ZGPPSEL, this is what allows us to load the POPSEL from a file rather than using the INB POPSEL forms
+  - there are 6 parameters. the first four we described above
+    -POPSEL Application - STUDENT
 ..*POPSEL Selection - BATCH_UPDATE_ADVISORS
 ..*POPSEL Creator ID - A00350677
 ..*POPSEL User ID - A00350677
